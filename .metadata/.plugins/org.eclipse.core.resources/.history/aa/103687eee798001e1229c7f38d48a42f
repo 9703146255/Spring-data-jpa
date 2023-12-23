@@ -1,0 +1,20 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Lob;
+import lombok.Data;
+
+@Entity
+@Data
+public class Employee 
+{
+
+	private Integer empId;
+	private String empName;
+	private Double empSal;
+	@Lob
+	private  byte[] empImage;
+	
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;in.thiru.service&apos; to &apos;in.thiru.repo&apos;&#x0D;&#x0A;- Original project: &apos;04-EmployeeCrudOperations&apos;&#x0D;&#x0A;- Original element: &apos;04-EmployeeCrudOperations/src/main/java/in.thiru.service&apos;&#x0D;&#x0A;- Renamed element: &apos;04-EmployeeCrudOperations/src/main/java/in.thiru.repo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;in.thiru.service&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.thiru.service" name="in.thiru.repo" qualified="false" references="true" stamp="1701662843865" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+package in.thiru.service;
+
+import org.springframework.stereotype.Service;
+
+import in.thiru.repo.VegetableRepo;
+
+@Service
+public class VegetableService {
+	
+	private VegetableRepo vegRepo;
+	
+	public void exportRepo()
+	{
+		
+	}
+
+}

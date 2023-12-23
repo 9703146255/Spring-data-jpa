@@ -1,0 +1,45 @@
+package in.thiru.service;
+
+import org.springframework.stereotype.Service;
+
+import in.thiru.entity.Address;
+import in.thiru.entity.Employee;
+import in.thiru.repo.AddressRepo;
+import in.thiru.repo.EmployeeRepo;
+
+@Service
+public class EmployeeService {
+
+	private EmployeeRepo empRepo;
+	private AddressRepo addRepo;
+
+	public EmployeeService(EmployeeRepo empRepo, AddressRepo addRepo) {
+
+		this.empRepo = empRepo;
+		this.addRepo = addRepo;
+	}
+	
+	
+	public void saveData()
+	{
+		
+		Employee emp=new Employee();
+		emp.setEmpName("kiran");
+		emp.setEmpSal(1000.00);	
+		
+		Employee save = empRepo.save(emp);
+		
+		
+		Address address=new Address();
+		address.setCountry("IND");
+		address.setState("ANDHRA");
+		address.setType("PERMENENT");
+		address.setEmpId(save.getEmpId());
+		
+		
+		addRepo.save(address);
+		
+		
+	}
+
+}

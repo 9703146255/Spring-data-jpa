@@ -1,0 +1,5 @@
+package in.thiru.dto;
+
+public class EmployeeDto {
+
+}

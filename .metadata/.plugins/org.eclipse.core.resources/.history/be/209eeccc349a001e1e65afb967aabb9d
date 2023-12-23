@@ -1,0 +1,11 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Embeddable;
+
+@Embeddable
+public class ShopPk {
+
+	private String shopNo;
+	private Integer shopId;
+
+}

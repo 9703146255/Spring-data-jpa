@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;in.thiru.customegen.CustomGenerator&apos; to &apos;CustomIDGenerator&apos;&#x0D;&#x0A;- Original project: &apos;14-OrderAppCustomeGenerator&apos;&#x0D;&#x0A;- Original element: &apos;in.thiru.customegen.CustomGenerator&apos;&#x0D;&#x0A;- Renamed element: &apos;in.thiru.customegen.CustomIDGenerator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CustomGenerator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.thiru.customegen{CustomGenerator.java[CustomGenerator" matchStrategy="1" name="CustomIDGenerator" qualified="false" references="true" similarDeclarations="false" stamp="1702112836460" textual="false" version="1.0"/>
+</session>

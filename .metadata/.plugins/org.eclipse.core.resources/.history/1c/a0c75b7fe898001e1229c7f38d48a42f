@@ -1,0 +1,36 @@
+package in.thiru.service;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.thiru.entity.Employee;
+import in.thiru.repo.EmployeeRepo;
+
+@Service
+public class EmpService {
+
+	@Autowired
+	private EmployeeRepo repo;
+
+	public void saveImage() throws FileNotFoundException 
+	{
+
+		File f=new File("hanuma.jpg");
+		
+		FileInputStream fis=new FileInputStream(f);
+		
+		
+		long length = f.length();
+		
+		Employee emp=new Employee();
+		
+		emp.setEmpImage(fis);
+		
+		
+	}
+
+}

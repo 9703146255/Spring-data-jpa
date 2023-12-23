@@ -1,0 +1,9 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Table(name = "employee")
+public class Employee {
+
+}

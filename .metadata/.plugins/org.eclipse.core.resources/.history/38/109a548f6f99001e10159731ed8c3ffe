@@ -1,0 +1,39 @@
+package in.thiru.bean;
+
+import javax.sql.DataSource;
+
+import org.hibernate.jpa.boot.spi.EntityManagerFactoryBuilder;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.transaction.PlatformTransactionManager;
+
+import jakarta.persistence.EntityManagerFactory;
+
+@Primary
+
+public class EntityManagerFactory {
+	
+	@Primary
+	@Bean(name = "mysqlEntityManagerFactory")
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory(
+	        EntityManagerFactoryBuilder builder,
+	        @Qualifier("mysqlDataSource") DataSource dataSource) {
+	    return builder
+	            .withDataSource(dataSource)
+	            .packages("in.thiru.mysql.model")  // Update package name here
+	            .persistenceUnit("mysql")
+	            .build();
+	}
+
+	@Primary
+	@Bean(name = "mysqlTransactionManager")
+	public PlatformTransactionManager transactionManager(
+	        @Qualifier("mysqlEntityManagerFactory") EntityManagerFactory entityManagerFactory) {
+	    return new JpaTransactionManager(entityManagerFactory);
+	}
+
+
+}

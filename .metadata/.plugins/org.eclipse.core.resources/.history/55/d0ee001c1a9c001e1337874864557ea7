@@ -1,0 +1,47 @@
+package in.thiru.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import in.thiru.entity.Student;
+import in.thiru.repo.StudentRepo;
+
+@Service
+public class StudentService {
+
+	private StudentRepo studentRepo;
+
+	public StudentService(StudentRepo studentRepo) {
+
+		this.studentRepo = studentRepo;
+	}
+	
+	
+	public void exportDataFromDBToExcel()
+	{
+		
+		
+		
+		List<Student> students = studentRepo.findAll();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

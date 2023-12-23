@@ -1,0 +1,14 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Student {
+	
+    private Integer studentId;
+    private String studentName;
+    private Double studentFee;
+    private String studentEmail;
+    private Long studentMobile;
+
+}

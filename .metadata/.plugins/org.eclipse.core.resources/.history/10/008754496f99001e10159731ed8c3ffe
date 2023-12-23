@@ -1,0 +1,15 @@
+package in.thiru.bean;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
+
+@Primary
+@Bean(name = "mysqlEntityManagerFactory")
+public class entityManagerFactory {
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,30 @@
+package in.thiru.service;
+
+import org.springframework.stereotype.Service;
+
+import in.thiru.repo.AddressRepo;
+import in.thiru.repo.EmployeeRepo;
+
+@Service
+public class EmployeeService {
+
+	private EmployeeRepo empRepo;
+	private AddressRepo addRepo;
+
+	public EmployeeService(EmployeeRepo empRepo, AddressRepo addRepo) {
+
+		this.empRepo = empRepo;
+		this.addRepo = addRepo;
+	}
+	
+	
+	public void saveData()
+	{
+		
+		
+		
+		
+		
+	}
+
+}

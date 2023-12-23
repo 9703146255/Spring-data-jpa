@@ -1,0 +1,20 @@
+package in.thiru.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import in.thiru.entity.Vegetables;
+import in.thiru.repo.VegetableRepo;
+
+@Service
+public class VegetableService {
+	
+	private VegetableRepo vegRepo;
+	
+	public void exportRepo()
+	{
+		List<Vegetables> findAll = vegRepo.findAll();
+	}
+
+}

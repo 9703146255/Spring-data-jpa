@@ -1,0 +1,8 @@
+package in.thiru.dto;
+
+public class EmployeeDto {
+	
+	private String empName;
+	private Double empSal;
+
+}

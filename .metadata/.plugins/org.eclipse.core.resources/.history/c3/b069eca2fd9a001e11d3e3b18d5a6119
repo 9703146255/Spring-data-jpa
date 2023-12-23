@@ -1,0 +1,10 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="emp_addrs_TBL")
+public class Address {
+
+}

@@ -1,0 +1,32 @@
+package in.thiru.service;
+
+import java.util.List;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.springframework.stereotype.Service;
+
+import in.thiru.entity.Vegetables;
+import in.thiru.repo.VegetableRepo;
+
+@Service
+public class VegetableService {
+	
+	private VegetableRepo vegRepo;
+	
+	public void exportRepo()
+	{
+		List<Vegetables> vegetables = vegRepo.findAll();
+		
+		
+		
+		XSSFWorkbook workBook=new XSSFWorkbook();
+		
+		XSSFSheet sheet = workBook.createSheet("FIRST-SHEET");
+		
+		
+		
+		
+	}
+
+}

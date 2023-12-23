@@ -1,0 +1,14 @@
+package in.thiru.service;
+
+import org.springframework.stereotype.Service;
+
+import in.thiru.repo.EmployeeRepo;
+
+@Service
+public class EmployeeService {
+	
+	
+	private  EmployeeRepo repo;
+	
+
+}

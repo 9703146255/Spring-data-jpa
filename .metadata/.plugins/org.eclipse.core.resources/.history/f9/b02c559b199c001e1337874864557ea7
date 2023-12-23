@@ -1,0 +1,18 @@
+package in.thiru.service;
+
+import org.springframework.stereotype.Service;
+
+import in.thiru.repo.StudentRepo;
+
+@Service
+public class StudentService {
+
+	private StudentRepo studentRepo;
+
+	public StudentService(StudentRepo studentRepo) 
+	{
+
+		this.studentRepo = studentRepo;
+	}
+
+}

@@ -1,0 +1,17 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
+@Entity
+public class Employee {
+	
+	@Id
+	@GeneratedValue
+	private Integer empId;
+	private String empName;
+	private Double empSal;
+	private String empAdd;
+
+}

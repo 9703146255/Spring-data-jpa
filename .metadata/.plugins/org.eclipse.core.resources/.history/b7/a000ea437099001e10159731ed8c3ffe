@@ -1,0 +1,15 @@
+package in.thiru.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class AddressService {
+
+    @Autowired
+    @Qualifier("h2EntityManagerFactory")
+    private EntityManager entityManager;
+
+    public void saveAddress(Address address) {
+        entityManager.persist(address);
+    }
+}

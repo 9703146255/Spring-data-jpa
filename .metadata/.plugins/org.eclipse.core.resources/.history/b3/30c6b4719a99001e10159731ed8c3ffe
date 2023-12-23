@@ -1,0 +1,12 @@
+package in.thiru.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import in.thiru.repo.CourseRepo;
+
+public class CourseService {
+	
+	@Autowired
+	private CourseRepo repo;
+
+}

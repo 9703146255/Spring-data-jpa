@@ -1,0 +1,28 @@
+package in.thiru.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import in.thiru.entity.Shop;
+import in.thiru.entity.ShopPk;
+import in.thiru.repo.ShopRepo;
+
+public class ShopService {
+	
+	@Autowired
+	private ShopRepo shopRepo;
+	
+	
+	public void saveShopData()
+	{
+		
+		ShopPk pk=new ShopPk(101,"ABC-HYD");
+		
+		
+		Shop shop=new Shop("Flipkart", "Delhi", pk);
+		
+		
+		
+		
+	}
+
+}

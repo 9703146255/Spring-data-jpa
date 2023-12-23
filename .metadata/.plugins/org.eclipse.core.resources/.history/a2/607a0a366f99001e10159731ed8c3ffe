@@ -1,0 +1,6 @@
+package in.thiru.bean;
+@Primary
+@Bean(name = "mysqlEntityManagerFactory")
+public class LocalContainerEntityManagerFactoryBean {
+
+}

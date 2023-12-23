@@ -1,0 +1,14 @@
+package in.thiru.service;
+
+import in.thiru.repo.ShopRepo;
+
+public class ShopService {
+	
+	
+	private shopRepo ShopRepo;
+	public void saveShopData()
+	{
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="emp_db1")
+public class Employee {
+
+	private Integer empId;
+	private String empName;
+}

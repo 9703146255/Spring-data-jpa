@@ -1,0 +1,18 @@
+package in.thiru.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Employee_TBL")
+public class Employee 
+{
+	
+	
+	@Id
+	private Integer empId;
+	private String empName;
+	private Double empSal;
+
+}

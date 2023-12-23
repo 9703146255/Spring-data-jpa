@@ -1,0 +1,26 @@
+package in.thiru.service;
+
+import 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.thiru.entity.Employee;
+import jakarta.persistence.EntityManager;
+
+@Service
+public class EmployeeService {
+	
+	
+	
+	
+	
+    @Qualifier("mysqlEntityManagerFactory")
+    Autowired
+    private EntityManager entityManager;
+
+    public void saveEmployee(Employee employee) {
+        entityManager.persist(employee);
+    }
+
+
+}
